@@ -6,3 +6,5 @@ categories: jekyll
 ---
 
 Can you tell I am only a static page? :)
+
+Migrated to Jekyll. Past posts are from Tumblr. 

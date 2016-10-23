@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Bash Functions for Creating Jekyll Posts"
-date:   2016-10-23 12:00:)) -0400
+date:   2016-10-23 12:00:00 -0400
 categories: bash software engineering automation
 ---
 
