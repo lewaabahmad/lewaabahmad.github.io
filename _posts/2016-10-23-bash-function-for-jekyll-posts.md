@@ -2,7 +2,7 @@
 layout: post
 title:  "Bash Functions for Creating Jekyll Posts"
 date:   2016-10-23 12:00:)) -0400
-categories: bash, software engineering, automation
+categories: bash software engineering automation
 ---
 
 As I have decided to proceed with Jekyll atop Github Pages for my blog, I wanted a quick way to create posts. In Jekyll, the file structure include a directory called _posts. Creating a post is as simple as creating a file in the _posts directory in the following format: YYYY-MM-DD-title.md
@@ -36,7 +36,7 @@ alias onbp="__nbp() { _post=$1; _now=$(date +"%Y-%m-%d"); _filename=$_now-$_post
 
 This wasn't working either. It was baffling at first because copy/pasting this directly into the console worked just fine! I fumbled around some more and then finally found [this post on StackOverflow](http://unix.stackexchange.com/a/180708/196618). I had figured that it was something to do with how aliases were being parsed, but I did not realize that the function was inaccessible to the command ultimately. The explanation is put rather succintly in bash documentation, is quoted in the SO answer, and I'll include it here: 
 
->Bash always reads at least one complete line of input before executing any of the com‐ mands on that line. Aliases are expanded when a command is read, not when it is executed. Therefore, an alias definition appearing on the same line as another command does not take effect until the next line of input is read. The commands following the alias definition on that line are not affected by the new alias.
+>Bash always reads at least one complete line of input before executing any of the commands on that line. Aliases are expanded when a command is read, not when it is executed. Therefore, an alias definition appearing on the same line as another command does not take effect until the next line of input is read. The commands following the alias definition on that line are not affected by the new alias.
 
 Cool beans. Fair enough. Alright. Here's my new alias/function combo:
 

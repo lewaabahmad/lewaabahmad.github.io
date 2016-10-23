@@ -11,6 +11,11 @@
   </head>
   <body>
     <div id="content-container">
+      {% include nav.html %}
+
+      <h2> 
+        {{ page.title }}
+      </h2>  
       {{ content }}
     </div>
   </body>
