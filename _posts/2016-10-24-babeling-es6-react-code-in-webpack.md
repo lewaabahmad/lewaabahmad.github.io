@@ -13,6 +13,8 @@ Soooooooooooo, let's get to the bottom of this wizardry and pop the hood, tear t
 
 First off, let's make sure our JavaScript runtime is all set up. I didn't have nvm (node version manager) so I installed that and made sure I was using the last LTS release, which as of this writing is 4.6.1. I did the same for npm at version 2.15.9. 
 
+*Note! Though I tried to make things work with the LTS releases, I needed to update to latest to use my modules properly and run webpack! Install and use the latest version instead if you are following this for whatever godforsaken reason!*
+
 Great. Installing the React app generator was as simple as `npm install -g create-react-app` after that. Running the command `create-react-app hello-world` gives us the following:
 
 ```
@@ -220,11 +222,31 @@ module.export = {
 
 Webpack Loaders are documented [here](http://webpack.github.io/docs/using-loaders.html).
 
-7 - `mkdir components && touch components/board.js` to make our main/root react component.
+7 - `mkdir components && touch components/board.js` to make our main/root react component. I wrote the following code in there: 
 
-8 - 
+```
+var React = require('react');
+var ReactDOM = require('react-dom');
 
+var Board = React.createClass({
+  render: function() {
+    return (
+      <div id="main-board">
+        hello?
+      </div>
+    )
+  }
+})
 
+ReactDOM.render(<Board />, document.getElementById('game'))
+```
 
+8 - `webpack -w` - this actually was giving me a number of errors. Fantastic. I had to update from the LTS release because they handled/navigated the npm modules folder differently from the recent releases, and had to squash some other bugs. I added a note to the earlier install step. 
 
-Even more tutorials for React [here](http://andrewhfarmer.com/getting-started-tutorials/). 
+And boooooooooom!
+
+My bundle.js file exists, everything I need is in there, and when I open my index.js file in the browser I see my 'hello?'.
+
+Now I can start programming the game!
+
+I found even more tutorials for React [here](http://andrewhfarmer.com/getting-started-tutorials/). I don't know to what extent I'll check them out but I'm definitely gonna stick to learning the framework. 
