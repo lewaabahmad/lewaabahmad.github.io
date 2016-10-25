@@ -8,14 +8,18 @@ React is something I've wanted to get a better, fuller understanding of for a wh
 My first problem was a lack in my working knowledge in CoffeeScript. I always disliked it. I feel like it obfuscates what's actually happening under the hood. Also, what is wrong with JavaScript? Ugh. Whatever. I went to the CoffeeScript site and reread the documentation in an hour or two to understand what would be happening. To me, there are a couple really important things to remember in reading CoffeeScript:
 
 1 - blocks are dilineated via indentation 
+
 2 - the @ symbol means this, as in @say_hello is really this.say_hello
+
 3 - no var! variables declerations are written in when compiled and are scoped to their block.
+
 4 - this is how functions are define (much like fat-arrow notation in ES6): square = (x) -> x * x
+
 5 - the last line is returned by default as in Ruby. 
 
 Integrating React into the Rails app was pretty easy: install the `react-rails` gem and regerence the newly availible JS files in your manifest file. 
 
-Great, now that we're clear on CoffeeScript and we've got React into our tutorial app, the next hurdle came with JSX. The way I understand it, JSX is a templating DSL parsed via JavaScript. It allows you to essentially write HTML, interspersing JS code that gets interpolated later. There are some funny quirks like `className=` must be used instead of 'class=' for HTML elements because class is a reserved keyword. Here's an example of some JSX in a React class: 
+Great, now that we're clear on CoffeeScript and we've got React into our tutorial app, the next hurdle came with JSX. The way I understand it, JSX is a templating DSL parsed via JavaScript. It allows you to essentially write HTML, interspersing JS code that gets interpolated later. There are some funny quirks like `className=` must be used instead of 'class=' for HTML elements because class is a reserved keyword. Here's an example of some JSX: 
 
 ```JavaScript
 function helloWorld() {
