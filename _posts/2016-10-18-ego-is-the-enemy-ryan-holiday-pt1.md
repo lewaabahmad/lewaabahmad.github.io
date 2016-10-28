@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ego is The Enemy - Ryan Holiday
+title: Ego is The Enemy - Ryan Holiday (pt. 1)
 categories: books learning self-improvement
 ---
 
@@ -28,3 +28,5 @@ Holiday breaks the book up into sections titled “Aspire”, “Success”, and
 Within these sections, there are short chapters with anecdotes and examples of ego and how it plays out in one’s life. 
 
 Holiday defines ego as “unhealthy belief in one’s own importance.” Simple enough. Rather than ego in psychological terms as popularized by Freud (the conscious observer.)
+
+Continue [here]().

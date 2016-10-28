@@ -1,0 +1,45 @@
+---
+title: Snake3 in 2d with React
+layout: default
+---
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<style type="text/css">
+  #header {
+    text-align: center;
+  }
+
+  #game {
+    display: block;
+    margin: 0 auto;
+    text-align: right;
+    width: 549px;
+  }
+
+  .tile {
+    height: 25px;
+    width: 25px;
+    border: 1px solid gray;
+    float: left;
+  }
+
+  .game-over {
+    background: red;
+  }
+
+  .apple {
+    background: green;
+    background-size: cover;
+  }
+
+  .occupied-tile {
+    background: black;
+  }  
+</style>
+
+<div id="header">
+  <h2> SNAK3 </h2>
+  <p>Now in React flavor!</p>
+<div>
+<div id="game"></div>
+<script type="text/javascript" src="https://cdn.rawgit.com/lewaabahmad/snak3/master/react-2D/public/bundle.js"></script>
