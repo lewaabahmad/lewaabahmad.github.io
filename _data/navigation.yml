@@ -1,0 +1,21 @@
+# main links
+main:
+  # - title: "home"
+  #   url: /
+  # - title: "blog"
+  #   url: /blog
+  - title: "software"
+    url: /software
+  - title: "music/DJing"
+    url: /music
+  - title: "projects"
+    url: /projects
+  # - title: "submenu"
+  #   url: /
+  #   children: 
+  #     - title: "item 1"
+  #       url: /404
+  #     - title: "item 2"
+  #       url: /404
+  # - title: "subscribe"
+  #   url: /feed.xml
