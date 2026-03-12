@@ -96,9 +96,8 @@ body {
   opacity: 0.85;
 }
 
-a.cta-button,
-a.button-primary,
-button.button-primary {
+.cta-button,
+.button-primary {
   display: inline-block;
   padding: 12px 22px;
   border: 1px solid var(--color-primary);
@@ -110,24 +109,24 @@ button.button-primary {
   text-decoration: none;
   transition: background-color 140ms ease, border-color 140ms ease,
     transform 140ms ease;
+.cta-button:visited,
+.button-primary:visited {
+  color: var(--color-primary-text);
 }
 
-a.cta-button:hover,
-a.button-primary:hover,
-button.button-primary:hover {
+.cta-button:hover,
+.button-primary:hover {
   background: var(--color-primary-hover);
   border-color: var(--color-primary-hover);
 }
 
-a.cta-button:focus-visible,
-a.button-primary:focus-visible,
-button.button-primary:focus-visible {
+.cta-button:focus-visible,
+.button-primary:focus-visible {
   outline: 2px solid #111;
   outline-offset: 2px;
 }
 
-a.cta-button:active,
-a.button-primary:active,
-button.button-primary:active {
+.cta-button:active,
+.button-primary:active {
   transform: translateY(1px);
 }
