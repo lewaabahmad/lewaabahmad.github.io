@@ -91,7 +91,7 @@ body {
 }
 
 .cta-note {
-  margin-top: 12px;
+  padding-top: 12px;
   font-size: 0.92rem;
   opacity: 0.85;
 }
